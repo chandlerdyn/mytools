@@ -54,7 +54,7 @@ public class PaintView extends View {
 		path = new Path();
 
 		// 生成的缓存的bitmap
-		cachebBitmap = Bitmap.createBitmap(900, 600, Config.ARGB_8888);
+		cachebBitmap = Bitmap.createBitmap(400, 300, Config.ARGB_8888);
 
 		cacheCanvas = new Canvas(cachebBitmap);
 
