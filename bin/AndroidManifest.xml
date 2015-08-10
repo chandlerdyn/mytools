@@ -40,6 +40,12 @@
             android:screenOrientation="landscape">
             
         </activity>
+        
+        <activity 
+            android:name="com.example.mytools.swipelistview.SwipeActivity"
+            android:screenOrientation="portrait">
+            
+        </activity>
     </application>
 
 </manifest>

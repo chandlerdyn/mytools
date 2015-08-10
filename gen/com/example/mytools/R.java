@@ -15,6 +15,7 @@ public final class R {
         public static final int abc_slide_in_top=0x7f040003;
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
+        public static final int item_zoom_in=0x7f040006;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -550,6 +551,16 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int queryHint=0x7f01005b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int right_width=0x7f01006e;
         /**  SearchView dropdown background 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1077,7 +1088,10 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
+        public static final int del_icon_normal=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
+        public static final int qq_icon=0x7f020059;
+        public static final int wechat_icon=0x7f02005a;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1091,7 +1105,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050042;
+        public static final int action_settings=0x7f05004b;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1111,8 +1125,13 @@ containing a value of this type.
         public static final int icon=0x7f050029;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
+        public static final int item_left=0x7f050044;
+        public static final int item_right=0x7f050049;
+        public static final int item_right_txt=0x7f05004a;
+        public static final int iv_icon=0x7f050045;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050028;
+        public static final int listview=0x7f05003e;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1136,14 +1155,18 @@ containing a value of this type.
         public static final int showTitle=0x7f050006;
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050038;
+        public static final int swipelistBtn=0x7f05003d;
         public static final int tabMode=0x7f050002;
-        public static final int tablet_cancel=0x7f050040;
-        public static final int tablet_clear=0x7f05003f;
-        public static final int tablet_ok=0x7f05003e;
-        public static final int tablet_show=0x7f050041;
-        public static final int tablet_view=0x7f05003d;
+        public static final int tablet_cancel=0x7f050042;
+        public static final int tablet_clear=0x7f050041;
+        public static final int tablet_ok=0x7f050040;
+        public static final int tablet_show=0x7f050043;
+        public static final int tablet_view=0x7f05003f;
         public static final int title=0x7f05002a;
         public static final int top_action_bar=0x7f050020;
+        public static final int tv_msg=0x7f050047;
+        public static final int tv_time=0x7f050048;
+        public static final int tv_title=0x7f050046;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
@@ -1200,8 +1223,10 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_hand_write_show=0x7f030018;
         public static final int activity_main=0x7f030019;
-        public static final int activity_write=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int activity_swipe_list=0x7f03001a;
+        public static final int activity_write=0x7f03001b;
+        public static final int list_item=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -3114,5 +3139,34 @@ containing a value of this type.
           @attr name com.example.mytools:paddingStart
         */
         public static final int View_paddingStart = 1;
+        /** Attributes that can be used with a swipelistviewstyle.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #swipelistviewstyle_right_width com.example.mytools:right_width}</code></td><td></td></tr>
+           </table>
+           @see #swipelistviewstyle_right_width
+         */
+        public static final int[] swipelistviewstyle = {
+            0x7f01006e
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.mytools.R.attr#right_width}
+          attribute's value can be found in the {@link #swipelistviewstyle} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.mytools:right_width
+        */
+        public static final int swipelistviewstyle_right_width = 0;
     };
 }

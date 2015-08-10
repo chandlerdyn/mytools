@@ -95,7 +95,11 @@ public class WriteActivity extends Activity {
 		});
 	}
 	
-	
+	/**
+	 * 将bitmap保存到sd卡
+	 * @param bitName
+	 * @param mBitmap
+	 */
 	public void saveMyBitmap(String bitName,Bitmap mBitmap){
 		
 		if(!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {

@@ -1,6 +1,7 @@
 package com.example.mytools;
 
 import com.example.mytools.handwrite.WriteActivity;
+import com.example.mytools.swipelistview.SwipeActivity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
@@ -26,6 +27,13 @@ public class MainActivity extends ActionBarActivity {
 		case R.id.handwriteBtn:
 			Intent i1 = new Intent(MainActivity.this, WriteActivity.class);
 			startActivity(i1);
+			
+			break;
+			
+		case R.id.swipelistBtn:
+			
+			Intent i2 = new Intent(MainActivity.this, SwipeActivity.class);
+			startActivity(i2);
 			
 			break;
 
