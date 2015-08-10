@@ -9,6 +9,11 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.ImageView;
 
+/**
+ * 手写签名图片展示界面
+ * @author Administrator
+ *
+ */
 public class HandWriteShowActivity extends Activity {
 	
 	
