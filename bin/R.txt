@@ -282,6 +282,7 @@ int id middle 0x7f050012
 int id never 0x7f050009
 int id none 0x7f050010
 int id normal 0x7f050000
+int id paintView 0x7f05003f
 int id progress_circular 0x7f050018
 int id progress_horizontal 0x7f050019
 int id radio 0x7f05002e
@@ -307,7 +308,6 @@ int id tablet_cancel 0x7f050042
 int id tablet_clear 0x7f050041
 int id tablet_ok 0x7f050040
 int id tablet_show 0x7f050043
-int id tablet_view 0x7f05003f
 int id title 0x7f05002a
 int id top_action_bar 0x7f050020
 int id tv_msg 0x7f050047

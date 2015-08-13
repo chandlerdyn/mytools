@@ -34,12 +34,12 @@ public class WriteActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_write);
 		
-//		mView = (PaintView) findViewById(R.id.paintView);
+		mView = (PaintView) findViewById(R.id.paintView);
 		
-		mView = new PaintView(this);
-		FrameLayout frameLayout = (FrameLayout) findViewById(R.id.tablet_view);
-		frameLayout.addView(mView);
-		mView.requestFocus();
+	//	mView = new PaintView(this);
+//		FrameLayout frameLayout = (FrameLayout) findViewById(R.id.tablet_view);
+//		frameLayout.addView(mView);
+//		mView.requestFocus();
 		Button btnClear = (Button) findViewById(R.id.tablet_clear);
 		btnClear.setOnClickListener(new View.OnClickListener() {
 

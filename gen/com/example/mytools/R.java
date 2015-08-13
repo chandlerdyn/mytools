@@ -1136,6 +1136,7 @@ containing a value of this type.
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
+        public static final int paintView=0x7f05003f;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002e;
@@ -1161,7 +1162,6 @@ containing a value of this type.
         public static final int tablet_clear=0x7f050041;
         public static final int tablet_ok=0x7f050040;
         public static final int tablet_show=0x7f050043;
-        public static final int tablet_view=0x7f05003f;
         public static final int title=0x7f05002a;
         public static final int top_action_bar=0x7f050020;
         public static final int tv_msg=0x7f050047;
