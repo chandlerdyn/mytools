@@ -29,12 +29,14 @@
             </intent-filter>
         </activity>
         
-        
+        <!-- 手写签名界面 -->
         <activity 
             android:name="com.example.mytools.handwrite.WriteActivity"
             android:screenOrientation="landscape">
             
         </activity>
+        
+        <!-- 手写签名展示界面 -->
         <activity 
             android:name="com.example.mytools.handwrite.HandWriteShowActivity"
             android:screenOrientation="landscape">
