@@ -28,6 +28,7 @@ import android.os.Bundle;
 /**
  * An Authenticator that uses {@link AccountManager} to get auth
  * tokens of a specified type for a specified account.
+ * <p>继承 Authenticator，基于 Android AccountManager 的认证交互实现类。 
  */
 public class AndroidAuthenticator implements Authenticator {
     private final AccountManager mAccountManager;

@@ -21,6 +21,7 @@ import com.android.volley.VolleyError;
 
 /**
  * Indicates that there was a network error when performing a Volley request.
+ * <p>继承自 VolleyError，代表网络错误。 
  */
 @SuppressWarnings("serial")
 public class NetworkError extends VolleyError {

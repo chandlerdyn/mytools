@@ -31,6 +31,8 @@ import android.widget.ImageView.ScaleType;
 /**
  * A canned request for getting an image at a given URL and calling
  * back with a decoded Bitmap.
+ * <p>继承 Request 类，代表了一个返回值为 Image 的请求。将网络返回的结果数据解析为 Bitmap 类型。
+ * 可以设置图片的最大宽度和最大高度，并计算出合适尺寸返回。每次最多解析一张图片防止 OOM。 
  */
 public class ImageRequest extends Request<Bitmap> {
     /** Socket timeout in milliseconds for image requests */

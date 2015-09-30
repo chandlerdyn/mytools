@@ -18,6 +18,7 @@ package com.android.volley;
 
 /**
  * Exception style class encapsulating Volley errors
+ * <p>Volley 中所有错误异常的父类，继承自 Exception，可通过此类设置和获取 NetworkResponse 或者请求的耗时。 
  */
 @SuppressWarnings("serial")
 public class VolleyError extends Exception {

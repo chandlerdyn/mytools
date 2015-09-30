@@ -21,6 +21,7 @@ import com.android.volley.VolleyError;
 
 /**
  * Indicates that the server's response could not be parsed.
+ * <p>继承自 VolleyError，代表内容解析错误。 
  */
 @SuppressWarnings("serial")
 public class ParseError extends VolleyError {

@@ -20,6 +20,8 @@ import com.android.volley.AuthFailureError;
 
 /**
  * An interface for interacting with auth tokens.
+ * <p>接口：身份认证接口，用于基本认证或者摘要认证。这个类是 Volley 用于和身份验证打通的接口，比如 OAuth，
+ * 不过目前的使用不是特别广泛和 Volley 的内部结合也不是特别紧密。 
  */
 public interface Authenticator {
     /**

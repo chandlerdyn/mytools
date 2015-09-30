@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-/** Logging helper class. */
+/** Logging helper class. <p>Volley 的 Log 工具类。 */
 public class VolleyLog {
     public static String TAG = "Volley";
 

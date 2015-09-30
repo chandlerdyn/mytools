@@ -21,6 +21,7 @@ import com.android.volley.VolleyError;
 
 /**
  * Indicates that the server responded with an error response.
+ * <p>继承自 VolleyError，代表服务端错误。
  */
 @SuppressWarnings("serial")
 public class ServerError extends VolleyError {

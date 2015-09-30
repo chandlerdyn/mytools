@@ -23,6 +23,7 @@ import com.android.volley.VolleyError;
 
 /**
  * Error indicating that there was an authentication failure when performing a Request.
+ * <p>继承自 VolleyError，代表请求认证失败错误，如 RespondeCode 的 401 和 403
  */
 @SuppressWarnings("serial")
 public class AuthFailureError extends VolleyError {

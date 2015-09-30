@@ -28,6 +28,7 @@ import com.android.volley.toolbox.ImageLoader.ImageListener;
 /**
  * Handles fetching an image from a URL as well as the life-cycle of the
  * associated request.
+ * <p>利用 ImageLoader，可以加载网络图片的 ImageView
  */
 public class NetworkImageView extends ImageView {
     /** The URL of the network image to load */
@@ -69,7 +70,7 @@ public class NetworkImageView extends ImageView {
      * NOTE: If applicable, {@link NetworkImageView#setDefaultImageResId(int)} and
      * {@link NetworkImageView#setErrorImageResId(int)} should be called prior to calling
      * this function.
-     *
+     *<p>设置网络图片的 Url 和 ImageLoader，将利用这个 ImageLoader 去获取网络图片。 
      * @param url The URL that should be loaded into this ImageView.
      * @param imageLoader ImageLoader that will be used to make the request.
      */
@@ -93,6 +94,7 @@ public class NetworkImageView extends ImageView {
     /**
      * Sets the default image resource ID to be used for this view until the attempt to load it
      * completes.
+     * <p>设置默认图片，加载图片过程中显示。
      */
     public void setDefaultImageResId(int defaultImage) {
         mDefaultImageId = defaultImage;
@@ -101,6 +103,7 @@ public class NetworkImageView extends ImageView {
     /**
      * Sets the error image resource ID to be used for this view in the event that the image
      * requested fails to load.
+     * <p>设置错误图片，加载图片失败后显示。
      */
     public void setErrorImageResId(int errorImage) {
         mErrorImageId = errorImage;
