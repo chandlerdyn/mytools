@@ -13,10 +13,13 @@
     </FrameLayout> 
     -->  
     
-    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeeeee"/>
    <!---->  <com.example.mytools.handwrite.PaintView 
         android:id="@+id/paintView"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" 
         android:background="#ffffffff"/> 
@@ -32,7 +35,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="确定" />
+            android:text="保存" />
         
         <Button
             android:id="@+id/tablet_clear"

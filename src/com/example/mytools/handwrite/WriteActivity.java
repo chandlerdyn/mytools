@@ -18,7 +18,12 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Toast;
-
+/**
+ * 手写签名界面  
+ * <p> 点击确定后 点击查看才有保存图像
+ * @author WangLuJie
+ *
+ */
 public class WriteActivity extends Activity {
 	
 	PaintView mView;
@@ -41,6 +46,8 @@ public class WriteActivity extends Activity {
 //		frameLayout.addView(mView);
 //		mView.requestFocus();
 		Button btnClear = (Button) findViewById(R.id.tablet_clear);
+		
+		//清除 按钮监听
 		btnClear.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -50,6 +57,7 @@ public class WriteActivity extends Activity {
 		});
 
 		Button btnOk = (Button) findViewById(R.id.tablet_ok);
+		//保存按钮监听
 		btnOk.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -70,6 +78,7 @@ public class WriteActivity extends Activity {
 		});
 		
 		Button btnCancel = (Button)findViewById(R.id.tablet_cancel);
+		//取消按钮监听
 		btnCancel.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -82,6 +91,7 @@ public class WriteActivity extends Activity {
 		
 	
 		Button btnShow = (Button) findViewById(R.id.tablet_show);
+		//查看按钮监听
 		btnShow.setOnClickListener(new OnClickListener() {
 			
 			@Override

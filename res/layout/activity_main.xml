@@ -43,6 +43,15 @@
                 android:layout_marginTop="20dp"
                 android:onClick="onClick"
                 android:text="获取sim卡imsi值"/>
+            
+            
+            <Button 
+                android:id="@+id/refreshlayoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onClick"
+                android:text="新式下拉上滑组件"/>
         </LinearLayout>
         
     </ScrollView>

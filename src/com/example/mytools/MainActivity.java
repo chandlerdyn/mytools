@@ -4,6 +4,7 @@ import com.example.mytools.getimsi.GetImsi;
 import com.example.mytools.getimsi.PhoneImsi;
 import com.example.mytools.handwrite.WriteActivity;
 import com.example.mytools.swipelistview.SwipeActivity;
+import com.example.mytools.updownlayout.RefreshActivity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
@@ -52,6 +53,11 @@ public class MainActivity extends ActionBarActivity {
 			}
 			
 			
+			break;
+			
+		case R.id.refreshlayoutBtn:
+			
+			startActivity(new Intent(this,RefreshActivity.class));
 			break;
 
 		default:
